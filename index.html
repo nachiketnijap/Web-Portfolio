@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="port1.css">
 </head>
 
@@ -19,7 +21,7 @@
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#Skills">Skills</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="close fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
@@ -43,7 +45,10 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">Objective</h1>
-                    <p class="paragraph-about">To excel as a developer by leveraging my programming expertise, technical creativity, and passion for problem-solving. Dedicated to continuous learning and innovation aiming to contribute effectively to the growth and success of an organization while continuously expanding my skill set in a dynamic and collaborative environment.</p>
+                    <p class="paragraph-about">To excel as a developer by leveraging my programming expertise, technical
+                        creativity, and passion for problem-solving. Dedicated to continuous learning and innovation
+                        aiming to contribute effectively to the growth and success of an organization while continuously
+                        expanding my skill set in a dynamic and collaborative environment.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('education')">Education</p>
                         <p class="tab-links" onclick="opentab('skills')">Skills</p>
@@ -51,11 +56,14 @@
                     </div>
                     <div class="tab-contents active-tab" id="education">
                         <li><span>2021- B-tech (Mumbai University)</span>
-                        <h4>8.67 CGPI</h4></li>
+                            <h4>8.67 CGPI</h4>
+                        </li>
                         <li><span>2017- HSC (S.D.S.M. College)</span>
-                        <h4>76%</h4></li>
+                            <h4>76%</h4>
+                        </li>
                         <li><span>2015- SSC (Aryan Highschool)</span>
-                        <h4>91%</h4></li>
+                            <h4>91%</h4>
+                        </li>
                     </div>
                     <div class="tab-contents" id="skills">
                         <li><span class="span-about">Web Development</span></li>
@@ -96,18 +104,20 @@
         </div>
     </div>
 
-    <!-------------------------------porfolio---------------------------------------------------------------- -->
-    <div id="portfolio">
+    <!-------------------------------projects---------------------------------------------------------------- -->
+    <div id="projects">
         <div class="container">
-            <h1 class="sub-title">My Courses</h1>
+            <h1 class="sub-title">My Projects</h1>
             <div class="work-list">
                 <!-- all images are same -->
                 <div class="work"><img src="reference_porfolio_section.png" alt="">
                     <div class="layer">
                         <p>Sql Certificate</p>
-                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <div class="horizontal">
+                            <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                            <a href=""><i class="fa-brands fa-github fa-xl"></i></a>
+                        </div>
                     </div>
-
                 </div>
                 <div class="work"><img src="reference_porfolio_section.png" alt="">
                     <div class="layer">
@@ -125,34 +135,35 @@
             <a href="" class="btn">See More</a>
         </div>
     </div>
-<!-- ----------------------------------------contact-------------------------------------------- -->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i> nachiketnijap@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i> 9049450339</p>
-                <div class="social-icon">
-                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+    <!-- ----------------------------------------contact-------------------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> nachiketnijap@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9049450339</p>
+                    <div class="social-icon">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <!-- here i have to add pdf of resume. -->
+                    <a href="" download class="btn btn2">Download CV</a>
                 </div>
-                <!-- here i have to add pdf of resume. -->
-                <a href="" download class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message"  rows="10" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
     <script>
         var tablinks = document.getElementsByClassName('tab-links');
         var tabcontents = document.getElementsByClassName('tab-contents');
@@ -169,31 +180,31 @@
 
     </script>
     <script>
-        var sidemeu= document.getElementById('sidemenu');
-        function openmenu(){
-            sidemeu.style.right='0';
+        var sidemeu = document.getElementById('sidemenu');
+        function openmenu() {
+            sidemeu.style.right = '0';
         }
-        function closemenu(){
-            sidemeu.style.right='-200px';
+        function closemenu() {
+            sidemeu.style.right = '-200px';
         }
     </script>
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyHFx8A1gumvbcX0iASyVqbWx92yPRel-RcbadP4nTG6GcKMs-yt5XoGlPVVsbMyWB_/exec'
         const form = document.forms['submit-to-google-sheet']
-        const msg=document.getElementById('msg')
+        const msg = document.getElementById('msg')
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML='Message sent sucessfully!'
-                setTimeout(function(){
-                    msg.innerHTML=''
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = 'Message sent sucessfully!'
+                    setTimeout(function () {
+                        msg.innerHTML = ''
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-      </script>
+    </script>
 </body>
 
 </html>
