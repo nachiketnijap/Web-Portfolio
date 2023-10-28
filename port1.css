@@ -33,22 +33,12 @@ nav{
     flex-wrap: wrap;
 }
 .logo {
-    font-family: 'Arial Black', sans-serif;
-    font-size: 40px;
-    color: #ff004f;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-shadow: 2px 2px 4px #000000;
-    animation: shake 5s infinite;
-  }
+    width: 130px;
+    border-radius: 8px;
+    border:solid #ff004f 5px;
+}
 
-  @keyframes shake {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-155px); }
-    50% { transform: translateX(155px); }
-    75% { transform: translateX(-5px); }
-    100% { transform: translateX(0); }
-  }
+
 nav ul li{
     display: inline-block;
     list-style:none;
