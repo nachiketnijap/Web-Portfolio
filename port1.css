@@ -32,10 +32,23 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.logo{
-    width:140px;
-}
+.logo {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 40px;
+    color: #ff004f;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px #000000;
+    animation: shake 5s infinite;
+  }
 
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-155px); }
+    50% { transform: translateX(155px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
 nav ul li{
     display: inline-block;
     list-style:none;
@@ -49,7 +62,7 @@ nav ul li a{
 }
 
 /* this effect is nt applied */
-nav ul li a::after{    
+nav ul li slide::after{    
 content: '';
 width: 0;
 height:3px;
@@ -183,7 +196,7 @@ li,h4{
     margin-top: 40px;
 }
 
-/* -------------------------porfolio------------------- */
+/* -------------------------project------------------- */
 #portfolio{
     padding:50px 0;
 }
