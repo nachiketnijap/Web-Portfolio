@@ -1,221 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="port1.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="port1.css" />
+  </head>
 
-<body>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="nachiket.jpeg" alt="" class='logo'>
-                <ul id="sidemenu">
-                    <li><a clsss="slide" href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#Skills">Skill</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="close fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="dis fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Web Developer</p>
-                <h1>Hi, I'm <span>Nachiket</span></h1>
-            </div>
+      <div class="container">
+        <nav>
+          <img src="nachiket.jpeg" alt="" class="logo" />
+          <ul id="sidemenu">
+            <li><a clsss="slide" href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Skills">Skill</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="close fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="dis fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi, I'm <span>Nachiket</span></h1>
         </div>
+      </div>
     </div>
 
     <!-- ----------------------about---------------------- -->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <!-- afterwords put image -->
-                    <img src="reference_porfolio_section.jpg" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">Objective</h1>
-                    <p class="paragraph-about">To excel as a developer by leveraging my programming expertise, technical
-                        creativity, and passion for problem-solving. Dedicated to continuous learning and innovation
-                        aiming to contribute effectively to the growth and success of an organization while continuously
-                        expanding my skill set in a dynamic and collaborative environment.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="education">
-                        <li><span>2021- B-tech (Mumbai University)</span>
-                            <h4>8.67 CGPI</h4>
-                        </li>
-                        <li><span>2017- HSC (S.D.S.M. College)</span>
-                            <h4>76%</h4>
-                        </li>
-                        <li><span>2015- SSC (Aryan Highschool)</span>
-                            <h4>91%</h4>
-                        </li>
-                    </div>
-                    <div class="tab-contents" id="skills">
-                        <li><span class="span-about">Web Development</span></li>
-                        <li><span class="span-about">MY SQL</span></li>
-                        <li><span class="span-about">Python</span></li>
-                        <li><span class="span-about">Django</span></li>
-                        <li><span class="span-about">Mongo DB</span></li>
-                        <li><span class="span-about">Java</span></li>
-                        <li><span class="span-about">Spring Boot</span></li>
-
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <li><span class="span-about">Company- Nutech Sintered Product Private Limited</span></li>
-                        <li><span class="span-about">1 Year</span></li>
-                        <li><span class="span-about">As Quality Engineer</span></li>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <!-- afterwords put image -->
+            <img src="reference_porfolio_section.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">Objective</h1>
+            <p class="paragraph-about">
+              To excel as a developer by leveraging my programming expertise,
+              technical creativity, and passion for problem-solving. Dedicated
+              to continuous learning and innovation aiming to contribute
+              effectively to the growth and success of an organization while
+              continuously expanding my skill set in a dynamic and collaborative
+              environment.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
             </div>
+            <div class="tab-contents active-tab" id="education">
+              <li>
+                <span>2021- B-tech (Mumbai University)</span>
+                <h4>8.67 CGPI</h4>
+              </li>
+              <li>
+                <span>2017- HSC (S.D.S.M. College)</span>
+                <h4>76%</h4>
+              </li>
+              <li>
+                <span>2015- SSC (Aryan Highschool)</span>
+                <h4>91%</h4>
+              </li>
+            </div>
+            <div class="tab-contents" id="skills">
+              <li><span class="span-about">Web Development</span></li>
+              <li><span class="span-about">MY SQL</span></li>
+              <li><span class="span-about">Python</span></li>
+              <li><span class="span-about">Django</span></li>
+              <li><span class="span-about">Mongo DB</span></li>
+              <li><span class="span-about">Java</span></li>
+              <li><span class="span-about">Spring Boot</span></li>
+            </div>
+            <div class="tab-contents" id="experience">
+              <li>
+                <span class="span-about"
+                  >Company- Nutech Sintered Product Private Limited</span
+                >
+              </li>
+              <li><span class="span-about">1 Year</span></li>
+              <li><span class="span-about">As Quality Engineer</span></li>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- -----------------------------------skills----------------------------------------------------------- -->
     <div id="Skills">
-        <div class="container">
-            <h1>Skills</h1>
-            <div class="row-skills">
-                <div class="row-1-skills">
-                    <div class="skill-images"><img src="Skills-Images/pyhton-port.png" alt=""></div>
-                    <div class="skill-images"><img src="Skills-Images/django-port.png" alt=""></div>
-                    <div class="skill-images"><img src="Skills-Images/mysql-portfolio.png" alt=""></div>
-                    <div class="skill-images"><img src="Skills-Images/mongo-port.png" alt=""></div>
-                    <div class="skill-images"><img src="Skills-Images/Spring_boot.webp" alt=""></div>
-                    
-                </div>
-                <div class="row-2-skills">
-                    <div class="skill-images"><img src="Skills-Images/html-port.png" alt=""></div>
-                    <div class="skill-images"><img src="Skills-Images/css-port.png" alt=""></div>
-                    <div class="skill-images"><img src="Skills-Images/javasript port.png" alt=""></div>
-                    <div class="skill-images"><img src="Skills-Images/bootstrap-port.png" alt=""></div>
-                    <div class="skill-images"><img src="Skills-Images/Java.jpg" alt=""></div>
-                    <div class="skill-images"><img src="Skills-Images/Angular.png" alt=""></div>
-                </div>
+      <div class="container">
+        <h1>Skills</h1>
+        <div class="row-skills">
+          <div class="row-1-skills">
+            <div class="skill-images">
+              <img src="Skills-Images/pyhton-port.png" alt="" />
             </div>
+            <div class="skill-images">
+              <img src="Skills-Images/django-port.png" alt="" />
+            </div>
+            <div class="skill-images">
+              <img src="Skills-Images/mysql-portfolio.png" alt="" />
+            </div>
+            <div class="skill-images">
+              <img src="Skills-Images/mongo-port.png" alt="" />
+            </div>
+          </div>
+          <div class="row-2-skills">
+            <div class="skill-images">
+              <img src="Skills-Images/html-port.png" alt="" />
+            </div>
+            <div class="skill-images">
+              <img src="Skills-Images/css-port.png" alt="" />
+            </div>
+            <div class="skill-images">
+              <img src="Skills-Images/javasript port.png" alt="" />
+            </div>
+            <div class="skill-images">
+              <img src="Skills-Images/bootstrap-port.png" alt="" />
+            </div>
+            <div class="skill-images">
+              <img src="Skills-Images/Java.jpg" alt="" />
+            </div>
+            <div class="skill-images">
+              <img src="Skills-Images/mern.webp" alt="" />
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-------------------------------projects---------------------------------------------------------------- -->
     <div id="projects">
-        <div class="container">
-            <h1 class="sub-title">My Projects</h1>
-            <div class="work-list">
-                <!-- all images are same -->
-                
-                <div class="work"><img src="project/Healthcare.png" alt="">
-                    <div class="layer">
-                        <p>Health care</p>
-                        <div class="horizontal">
-                            <a href="https://drive.google.com/file/d/1NU4WRPGtQJ2BLRaDfcgEWomFgLwba2-4/view?t=7"><i class="fa-solid fa-video"></i></a>
-                            <a href="https://github.com/nachiketnijap/HealthCare-Website"><i class="fa-brands fa-github fa-xl"></i></a>
-                        </div>
-                    </div> 
-                </div>
-                <div class="work"><img src="project/medicalstore.png" alt="">
-                    <div class="layer">
-                        <p>MEDICAL STORE (DATA MANAGEMENT)</p>
-                        <div class="horizontal">
-                            <a href="https://drive.google.com/file/d/1U_ENLyUQrMDk1dG3lowOOFHBTnP0uYph/view?t=7"><i class="fa-solid fa-video"></i></a>
-                            <a href="https://github.com/nachiketnijap/Medical-Store-Data-Management-"><i class="fa-brands fa-github fa-xl"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="work"><img src="project/API.png" alt="">
-                    <div class="layer">
-                        <p>Quiz API</p>
-                        <div class="horizontal">
-                            
-                            <a href="https://github.com/nachiketnijap/QuizApp"><i class="fa-brands fa-github fa-xl"></i></a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <!-- all images are same -->
+
+          <div class="work">
+            <img src="project/Healthcare.png" alt="" />
+            <div class="layer">
+              <p>Health care</p>
+              <div class="horizontal">
+                <a
+                  href="https://drive.google.com/file/d/1NU4WRPGtQJ2BLRaDfcgEWomFgLwba2-4/view?t=7"
+                  ><i class="fa-solid fa-video"></i
+                ></a>
+                <a href="https://github.com/nachiketnijap/HealthCare-Website"
+                  ><i class="fa-brands fa-github fa-xl"></i
+                ></a>
+              </div>
             </div>
-            <a href="" class="btn">See More</a>
+          </div>
+          <div class="work">
+            <img src="project/medicalstore.png" alt="" />
+            <div class="layer">
+              <p>MEDICAL STORE (DATA MANAGEMENT)</p>
+              <div class="horizontal">
+                <a
+                  href="https://drive.google.com/file/d/1U_ENLyUQrMDk1dG3lowOOFHBTnP0uYph/view?t=7"
+                  ><i class="fa-solid fa-video"></i
+                ></a>
+                <a
+                  href="https://github.com/nachiketnijap/Medical-Store-Data-Management-"
+                  ><i class="fa-brands fa-github fa-xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="project/API.png" alt="" />
+            <div class="layer">
+              <p>Quiz API</p>
+              <div class="horizontal">
+                <a href="https://github.com/nachiketnijap/QuizApp"
+                  ><i class="fa-brands fa-github fa-xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
+        <a href="" class="btn">See More</a>
+      </div>
     </div>
     <!-- ----------------------------------------contact-------------------------------------------- -->
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i> nachiketnijap@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> 9049450339</p>
-                    <div class="social-icon">
-                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <!-- here i have to add pdf of resume. -->
-                    <a href="" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> nachiketnijap@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 9049450339</p>
+            <div class="social-icon">
+              <a href="https://facebook.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://instagram.com/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/feed/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
+            <!-- here i have to add pdf of resume. -->
+            <a href="" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
+      </div>
     </div>
     <script>
-        var tablinks = document.getElementsByClassName('tab-links');
-        var tabcontents = document.getElementsByClassName('tab-contents');
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove('active-link');
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove('active-tab');
-            }
-            event.currentTarget.classList.add('active-link');
-            document.getElementById(tabname).classList.add('active-tab');
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
-
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
     </script>
     <script>
-        var sidemeu = document.getElementById('sidemenu');
-        function openmenu() {
-            sidemeu.style.right = '0';
-        }
-        function closemenu() {
-            sidemeu.style.right = '-200px';
-        }
+      var sidemeu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
     </script>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyHFx8A1gumvbcX0iASyVqbWx92yPRel-RcbadP4nTG6GcKMs-yt5XoGlPVVsbMyWB_/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById('msg')
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = 'Message sent sucessfully!'
-                    setTimeout(function () {
-                        msg.innerHTML = ''
-                    }, 5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyHFx8A1gumvbcX0iASyVqbWx92yPRel-RcbadP4nTG6GcKMs-yt5XoGlPVVsbMyWB_/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent sucessfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
     </script>
-</body>
-
+  </body>
 </html>
